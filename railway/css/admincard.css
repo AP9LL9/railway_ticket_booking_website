@@ -1,0 +1,281 @@
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+  }
+  .body{
+    background-color:#f2f2f2;
+    font-family:  poppins;
+  }
+  
+  .sidebar{
+    width: 345px;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--#007bff);
+  }
+  
+  
+  .sidebar_logo{
+    /* height: 90px; */
+   
+    margin-bottom: 30px;
+    padding: 1.4rem 0rem 1rem 2.5rem;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .logo_cont{
+    display: flex;
+  }
+  .sidebar_logo h2{
+    padding-top: 5px;
+    display: inline-block;
+    padding-right: 1rem;
+  
+  }
+  
+  
+  
+  .sidebar_menu li{
+    width: 100%;
+    /* border-radius: 20px; */
+    padding: 10px;
+    padding-left: 2rem;
+    margin-bottom: 1.3rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .sidebar_menu li:hover {
+    border: 1px solid white;
+  }
+  
+  .sidebar_menu a{
+    color: #fff;
+    display: block;
+    font-size: 1.1rem; 
+  }
+  
+  .sidebar_menu a span{
+    font-size: 1.3rem;
+    padding-right: 1rem;
+  }
+  
+  
+  /* <-----------------------sidebar end-----------------------> */
+  
+  .main_container{
+    margin-left: 345px;
+    /* border: 1px solid red; */
+    
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.02rem;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .menu_box{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .menu_box img{
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+  .menu_box h2{
+    display: inline-block;
+    padding-top: 0.3rem;
+    font-weight: 600;
+    
+  }
+  
+  .user_wrapper{
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  .user_wrapper h4{
+    color: #007bff;
+  }
+  
+  /* ------------------HEADER END-------------------------- */
+  
+  
+  
+  /* -------------------------------- */
+  main{
+  
+    /* border: 1px solid greenyellow; */
+    background-color: #f0f0f0;
+    min-height: calc(100vh - 0.5rem);
+  
+  }
+  
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    /* background-color: aqua; */
+    padding: 2rem;
+  }
+  
+  .card{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  
+  
+  .card span{
+    color: var(--#8390a2);
+    font-weight: 500;
+    font-size: large;
+  }
+  
+  .ico_card{
+    margin-top: 8px;
+  }
+  
+  
+  
+  .grid1{
+    padding: 0 2rem 0 2rem;
+  
+  }
+  
+  .box{
+    background-color:#fff ;
+    border-radius: 5px;
+  
+  }
+  
+  .box_header,
+  .box_body{
+    padding: 1rem;
+  }
+  
+  .box_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #f0f0f0;
+  }
+  .box_header button{
+    background: #007bff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: .8rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #007bff;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%; /* Make the table take up 100% of its container */
+  }
+  
+  thead tr {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  td {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #222;
+  }
+  
+  thead td {
+    font-weight: 700;
+  }
+  
+  td button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  /* Add the following styles to make the table responsive */
+  .table-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; /* Adjust as needed for spacing between rows */
+  }
+  td button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #f5f5f5; /* Adjust the color as needed */
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Adjust the color as needed */
+  }
+  
+  /* Add the following styles for better hover effect on table rows */
+  tbody tr:hover {
+    background-color: #e0e0e0; /* Adjust the hover color as needed */
+  }
+  
+  /* .addtrain {
+    display: grid;
+    
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+  .addtrain .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .addtrain:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  } */
+  
+  
+  label {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c00404;
+  }

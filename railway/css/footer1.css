@@ -1,0 +1,40 @@
+
+
+.body{
+  
+}
+  .foot {
+    font-family: poppins;
+    font-size: 18px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff;
+    color: white;
+    
+  }
+  .boxfooter{
+    width:100%;
+   bottom: 0;
+  }
+
+  footer{
+    bottom: 0;
+  }
+  
+  .icons {
+    margin-left: 40px;
+  }
+  
+  .copyright {
+    margin-right: 40px;
+    text-align: right;
+  }
+  
+  .footdetails {
+    width: 40%;
+    margin-left: 40px;
+  }
+  

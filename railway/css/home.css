@@ -1,0 +1,336 @@
+body {
+    font-family:  poppins;
+    background-color: transparent;
+    background-image: url('h1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    background-position: center 270px;
+    position: relative;
+    z-index: 20;
+}
+
+
+
+
+
+
+
+.search-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.search-container h1{
+    
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 80px;
+}
+.search-container h1 span{
+    color: #007BFF;
+}
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    width: 250px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+
+
+.autocomplete-dropdown {
+    display: none;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 82%;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 999;
+    scrollbar-color: #007bff;
+}
+
+.autocomplete-dropdown {
+    /* Your existing styles here */
+    scrollbar-color: #007BFF #fff; /* Track and Handle colors */
+}
+
+.autocomplete-dropdown::-webkit-scrollbar {
+    width: 7px; /* Width of the entire scrollbar */
+}
+
+.autocomplete-dropdown::-webkit-scrollbar-track {
+    background: #fff; /* Track color */
+}
+
+.autocomplete-dropdown::-webkit-scrollbar-thumb {
+    background-color: #007BFF; /* Handle color */
+    
+}
+
+
+
+
+
+.input-group input:focus + .autocomplete-dropdown,
+.autocomplete-dropdown:hover {
+    display: block;
+}
+
+.dropdown button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.autocomplete-dropdown  {
+    padding-top: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.autocomplete-dropdown :hover {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.autocomplete-dropdown div{
+    padding-left:10px ;
+}
+
+.autocomplete-from {
+    width: 77%;
+    top: 100%;
+    left: 55px;
+}
+
+.autocomplete-to {
+    top: 100%;
+    left: 32px;
+}
+
+
+#search-results {
+    display: block;
+    z-index: 9999;
+}
+.search-result {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+
+/* Specify a text color for search results */
+.search-result p {
+    color: #333;
+}
+
+/* Change the hover effect for search results */
+.search-result:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.feature-table {
+    display: flex;
+    background-color: #fff;
+}
+
+.feature-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature-item h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.feature-header {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.disc h3, .disc p{
+    margin: 0;
+    width: 300px;
+}
+
+.benefits{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.row{
+    display: flex;
+    padding:150px;
+    gap: 100px;
+  
+}
+
+.el{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+.img{
+    width: 100px;
+}
+ 
+.img img{
+    width: 100px;
+
+}
+
+.destinations{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 150px;
+}
+
+.destinations h1{
+    font-size: 50px;
+}
+
+.place_box{
+    display: flex;
+    gap: 30px;
+}
+
+.place{
+    /* border: 3px solid lightgray; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.place:hover{
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.place h2, .place p{
+    margin: 0;
+} 
+
+.place h2 {
+    font-size: 30px;
+}
+
+.place p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.place p1{
+    color: gray;
+}
+.p_img img{
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+}
+.p_img{
+    width: 400px;
+    height: 500px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #007BFF;
+}
+
+.contacts{
+    text-align: center;
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+    color: white;
+}
+.contacts h1{
+    font-size:50px ;
+}
+
+.c_box{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.copyr{
+    width: 100%;
+    text-align: center;
+}
+
+
